@@ -1,0 +1,145 @@
+import { CarFront } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+export function Footer() {
+  const scrollToBooking = () => {
+    const element = document.getElementById("booking");
+    if (element) {
+      const navHeight = 64;
+      const elementPosition = element.offsetTop - navHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  return (
+    <>
+      {/* Floating CTA Button */}
+      <div className="fixed bottom-6 right-6 z-40">
+        <Button
+          onClick={scrollToBooking}
+          className="cta-gradient text-white p-4 rounded-full cta-shadow hover:scale-110 transition-bounce"
+          size="icon"
+        >
+          <CarFront className="h-6 w-6" />
+        </Button>
+      </div>
+
+      {/* Footer */}
+      <footer className="bg-gray-800 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+            {/* Company Info */}
+            <div className="sm:col-span-2 lg:col-span-1">
+              <div className="flex items-center mb-4">
+                <CarFront className="text-primary-light text-xl sm:text-2xl mr-3 h-6 w-6 sm:h-8 sm:w-8" />
+                <span className="text-lg sm:text-xl font-bold">KFZ Zulassungsstelle</span>
+              </div>
+              <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
+                Ihr vertrauensvoller Partner für schnelle und kompetente KFZ-Zulassungen in Köln. 
+                Seit über 15 Jahren in Ihrem Service.
+              </p>
+            </div>
+
+            {/* Services */}
+            <div>
+              <h4 className="text-base sm:text-lg font-bold mb-4">Unsere Services</h4>
+              <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
+                <li className="hover:text-primary-light transition-colors cursor-pointer">
+                  Fahrzeug anmelden
+                </li>
+                <li className="hover:text-primary-light transition-colors cursor-pointer">
+                  Fahrzeug ummelden
+                </li>
+                <li className="hover:text-primary-light transition-colors cursor-pointer">
+                  Fahrzeug abmelden
+                </li>
+                <li className="hover:text-primary-light transition-colors cursor-pointer">
+                  Kennzeichen-Service
+                </li>
+                <li className="hover:text-primary-light transition-colors cursor-pointer">
+                  Beratung & Support
+                </li>
+              </ul>
+            </div>
+
+            {/* Contact */}
+            <div>
+              <h4 className="text-base sm:text-lg font-bold mb-4">Kontakt</h4>
+              <div className="space-y-2 text-gray-300 text-sm sm:text-base">
+                <p>Musterstraße 123</p>
+                <p>50733</p>
+                <p className="mt-3">
+                  <strong>Tel:</strong>{" "}
+                  <a 
+                    href="tel:+4989123456789" 
+                    className="hover:text-primary-light transition-colors"
+                  >
+                    089 123 456 789
+                  </a>
+                </p>
+                <p>
+                  <strong>E-Mail:</strong>{" "}
+                  <a 
+                    href="mailto:info@zulassung-muenchen.de" 
+                    className="hover:text-primary-light transition-colors break-all"
+                  >
+                    info@zulassung.de
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            {/* Opening Hours */}
+            <div>
+              <h4 className="text-base sm:text-lg font-bold mb-4">Öffnungszeiten</h4>
+              <div className="space-y-2 text-gray-300 text-sm sm:text-base">
+                <div className="flex justify-between">
+                  <span>Mo-Fr:</span>
+                  <span className="font-medium">08:00 - 17:00</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Sa:</span>
+                  <span className="font-medium">09:00 - 13:00</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>So:</span>
+                  <span className="font-medium text-red-400">Geschlossen</span>
+                </div>
+                
+                <div className="mt-4 pt-4 border-t border-gray-700">
+                  <p className="text-xs sm:text-sm text-gray-400">
+                    Termine auch außerhalb der Öffnungszeiten nach Vereinbarung möglich.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom Bar 
+          <div className="border-t border-gray-700 mt-8 pt-8">
+            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+              <p className="text-gray-300 text-sm">
+                &copy; 2024 KFZ Zulassungsstelle Köln. Alle Rechte vorbehalten.
+              </p>
+              
+              <div className="flex space-x-6 text-sm text-gray-300">
+                <a href="#" className="hover:text-primary-light transition-colors">
+                  Impressum
+                </a>
+                <a href="#" className="hover:text-primary-light transition-colors">
+                  Datenschutz
+                </a>
+                <a href="#" className="hover:text-primary-light transition-colors">
+                  AGB
+                </a>
+              </div>
+            </div>
+          </div>*/}
+        </div>
+      </footer>
+    </>
+  );
+}
