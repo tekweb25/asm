@@ -1,6 +1,7 @@
 import { CarFront } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Datenschutz from "../assets/datenschutzrichtlinien_asm.pdf"
+import Datenschutz from "../assets/datenschutzerklärung_asm.pdf"
+import Impressum from "../assets/impressum_asm.pdf"
 import { useState } from "react";
 import Logo from '../assets/ASM-Logo-transparent.png';
 
@@ -152,6 +153,14 @@ export function Footer() {
                   className="hover:text-primary-light transition-colors"
                 >
                   Datenschutz
+                </a>
+                <a
+                  href={Impressum}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary-light transition-colors"
+                >
+                  Impressum
                 </a>
               </div>
             </div>

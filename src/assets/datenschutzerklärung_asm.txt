@@ -1,0 +1,50 @@
+Datenschutzerklärung
+
+Der Schutz Ihrer persönlichen Daten ist uns wichtig. Nachfolgend informieren wir Sie über die Erhebung, Verarbeitung und Nutzung Ihrer Daten im Rahmen unserer Website.
+
+1. Verantwortliche Stelle
+
+Verantwortlich für die Datenverarbeitung auf dieser Website ist:
+ASM-Zulassungsdienst
+E-Mail: info@asm-zulassungsdienst.de
+
+2. Erhebung und Speicherung personenbezogener Daten
+
+Wir erheben personenbezogene Daten (z. B. Name, E-Mail-Adresse, Nachricht), wenn Sie uns diese freiwillig zur Verfügung stellen, etwa durch das Ausfüllen eines Kontaktformulars oder das Senden einer E-Mail.
+
+3. Zweck der Datenverarbeitung
+
+Die von Ihnen bereitgestellten Daten verwenden wir ausschließlich zur Bearbeitung Ihrer Anfrage und zur Kommunikation mit Ihnen.
+
+4. Speicherung und Speicherdauer
+
+Ihre Daten werden nicht nach einer festen Frist gelöscht, sondern bleiben in unserem E-Mail-Postfach gespeichert, um eine lückenlose Kommunikation und eventuelle Nachverfolgung sicherzustellen.
+Bitte beachten Sie, dass wir nicht garantieren können, dass die Daten nachträglich gelöscht werden, sofern Sie dies nicht ausdrücklich verlangen.
+
+5. Nutzung von EmailJS
+
+Wir nutzen den Dienst EmailJS (EmailJS.com) zur technischen Umsetzung des E-Mail-Versands über das Kontaktformular.
+Die von Ihnen eingegebenen Daten werden über die Server von EmailJS verarbeitet. EmailJS kann Daten auf Servern außerhalb der EU speichern. Wir haben mit EmailJS einen Vertrag zur Auftragsverarbeitung (AVV) abgeschlossen, um den Datenschutz gemäß DSGVO sicherzustellen. Weitere Informationen finden Sie in der Datenschutzerklärung von EmailJS: https://www.emailjs.com/legal/privacy-policy/
+
+6. Weitergabe an Dritte
+
+Eine Weitergabe Ihrer Daten an andere Dritte erfolgt nicht, außer dies ist gesetzlich vorgeschrieben oder Sie haben ausdrücklich eingewilligt.
+
+7. Rechtsgrundlage
+
+Die Verarbeitung Ihrer Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung oder vorvertragliche Maßnahmen) und Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer effektiven Kommunikation).
+
+8. Ihre Rechte
+
+Sie haben jederzeit das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der Verarbeitung Ihrer personenbezogenen Daten sowie das Recht auf Datenübertragbarkeit und Widerspruch.
+Bitte kontaktieren Sie uns dazu unter den oben angegebenen Kontaktdaten. Wenn Sie möchten, dass Ihre Daten gelöscht werden, können Sie uns jederzeit auffordern.
+
+9. SSL-Verschlüsselung
+
+Unsere Website verwendet eine SSL-Verschlüsselung, um die Übertragung vertraulicher Inhalte zu schützen.
+
+10. Änderungen dieser Datenschutzerklärung
+
+Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie an geänderte Rechtslagen oder technische Entwicklungen anzupassen.
+
+Stand: September 2025
