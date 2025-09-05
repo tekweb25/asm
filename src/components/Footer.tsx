@@ -1,5 +1,9 @@
 import { CarFront } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Datenschutz from "../assets/datenschutzrichtlinien_asm.pdf"
+import { useState } from "react";
+import Logo from '../assets/ASM-Logo-transparent.png';
+
 
 export function Footer() {
   const scrollToBooking = () => {
@@ -12,6 +16,23 @@ export function Footer() {
         behavior: "smooth",
       });
     }
+  };
+
+  const [isOpen, setIsOpen] = useState(false);
+
+
+  const scrollToSection = (href: string) => {
+    const sectionId = href.substring(1);
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const navHeight = 64;
+      const elementPosition = element.offsetTop - navHeight;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    }
+    setIsOpen(false);
   };
 
   return (
@@ -34,12 +55,10 @@ export function Footer() {
             {/* Company Info */}
             <div className="sm:col-span-2 lg:col-span-1">
               <div className="flex items-center mb-4">
-                <CarFront className="text-primary-light text-xl sm:text-2xl mr-3 h-6 w-6 sm:h-8 sm:w-8" />
                 <span className="text-lg sm:text-xl font-bold">KFZ Zulassungsstelle</span>
               </div>
               <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                Ihr vertrauensvoller Partner für schnelle und kompetente KFZ-Zulassungen in Köln. 
-                Seit über 15 Jahren in Ihrem Service.
+                Ihr vertrauensvoller Partner für schnelle und kompetente KFZ-Zulassungen in Köln.
               </p>
             </div>
 
@@ -47,19 +66,20 @@ export function Footer() {
             <div>
               <h4 className="text-base sm:text-lg font-bold mb-4">Unsere Services</h4>
               <ul className="space-y-2 text-gray-300 text-sm sm:text-base">
-                <li className="hover:text-primary-light transition-colors cursor-pointer">
+                <li onClick={() => scrollToSection("#booking")}
+                  className="hover:text-primary-light transition-colors cursor-pointer">
                   Fahrzeug anmelden
                 </li>
-                <li className="hover:text-primary-light transition-colors cursor-pointer">
+                <li onClick={() => scrollToSection("#booking")} className="hover:text-primary-light transition-colors cursor-pointer">
                   Fahrzeug ummelden
                 </li>
-                <li className="hover:text-primary-light transition-colors cursor-pointer">
+                <li onClick={() => scrollToSection("#booking")} className="hover:text-primary-light transition-colors cursor-pointer">
                   Fahrzeug abmelden
                 </li>
-                <li className="hover:text-primary-light transition-colors cursor-pointer">
+                <li onClick={() => scrollToSection("#booking")} className="hover:text-primary-light transition-colors cursor-pointer">
                   Kennzeichen-Service
                 </li>
-                <li className="hover:text-primary-light transition-colors cursor-pointer">
+                <li onClick={() => scrollToSection("#booking")} className="hover:text-primary-light transition-colors cursor-pointer">
                   Beratung & Support
                 </li>
               </ul>
@@ -73,8 +93,8 @@ export function Footer() {
                 <p>50733</p>
                 <p className="mt-3">
                   <strong>Tel:</strong>{" "}
-                  <a 
-                    href="tel:+4989123456789" 
+                  <a
+                    href="tel:+4989123456789"
                     className="hover:text-primary-light transition-colors"
                   >
                     089 123 456 789
@@ -82,11 +102,11 @@ export function Footer() {
                 </p>
                 <p>
                   <strong>E-Mail:</strong>{" "}
-                  <a 
-                    href="mailto:info@zulassung-muenchen.de" 
+                  <a
+                    href="mailto:info@zulassung-muenchen.de"
                     className="hover:text-primary-light transition-colors break-all"
                   >
-                    info@zulassung.de
+                    info@asm-zulassungsdienst.de
                   </a>
                 </p>
               </div>
@@ -108,7 +128,7 @@ export function Footer() {
                   <span>So:</span>
                   <span className="font-medium text-red-400">Geschlossen</span>
                 </div>
-                
+
                 <div className="mt-4 pt-4 border-t border-gray-700">
                   <p className="text-xs sm:text-sm text-gray-400">
                     Termine auch außerhalb der Öffnungszeiten nach Vereinbarung möglich.
@@ -118,26 +138,24 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Bottom Bar 
           <div className="border-t border-gray-700 mt-8 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <p className="text-gray-300 text-sm">
-                &copy; 2024 KFZ Zulassungsstelle Köln. Alle Rechte vorbehalten.
+                &copy; 2025 KFZ Zulassungsstelle Köln. Alle Rechte vorbehalten.
               </p>
-              
+
               <div className="flex space-x-6 text-sm text-gray-300">
-                <a href="#" className="hover:text-primary-light transition-colors">
-                  Impressum
-                </a>
-                <a href="#" className="hover:text-primary-light transition-colors">
+                <a
+                  href={Datenschutz}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary-light transition-colors"
+                >
                   Datenschutz
-                </a>
-                <a href="#" className="hover:text-primary-light transition-colors">
-                  AGB
                 </a>
               </div>
             </div>
-          </div>*/}
+          </div>
         </div>
       </footer>
     </>

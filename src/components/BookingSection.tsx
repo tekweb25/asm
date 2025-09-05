@@ -7,6 +7,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CalendarCheck } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "emailjs-com";
 
 export function BookingSection() {
   const { toast } = useToast();
@@ -21,12 +22,24 @@ export function BookingSection() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // EmailJS Konfiguration (direkt in der Datei)
+  const SERVICE_ID = "service_qsqmmyb";
+  const TEMPLATE_ID = "template_9ean2ad";
+  const PUBLIC_KEY = "eIomi8q7CoKCoRPvA";
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
-    if (!formData.firstName || !formData.lastName || !formData.email || 
-        !formData.phone || !formData.service || !formData.date || !formData.time) {
+    if (
+      !formData.firstName ||
+      !formData.lastName ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.service ||
+      !formData.date ||
+      !formData.time
+    ) {
       toast({
         title: "Fehlende Angaben",
         description: "Bitte füllen Sie alle Pflichtfelder aus.",
@@ -35,31 +48,53 @@ export function BookingSection() {
       return;
     }
 
-    // Success message
-    toast({
-      title: "Terminanfrage erfolgreich!",
-      description: "Vielen Dank für Ihre Terminanfrage! Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
-    });
+    try {
+      await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          date: formData.date,
+          time: formData.time,
+          message: formData.message,
+        },
+        PUBLIC_KEY
+      );
 
-    // Reset form
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      service: "",
-      date: "",
-      time: "",
-      message: "",
-    });
+      toast({
+        title: "Terminanfrage erfolgreich!",
+        description: "Vielen Dank für Ihre Terminanfrage! Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      });
+
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        service: "",
+        date: "",
+        time: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast({
+        title: "Fehler beim Senden",
+        description: "Leider konnte die Anfrage nicht verschickt werden. Bitte versuchen Sie es später erneut.",
+        variant: "destructive",
+      });
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
-  // Set minimum date to today
-  const today = new Date().toISOString().split('T')[0];
+  const today = new Date().toISOString().split("T")[0];
 
   return (
     <section id="booking" className="py-16 section-bg">

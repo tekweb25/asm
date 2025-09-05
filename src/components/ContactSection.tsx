@@ -32,7 +32,7 @@ export function ContactSection() {
     try {
       // ✅ EmailJS send
       const result = await emailjs.send(
-        "service_y5qay3q",    // <-- Service ID aus EmailJS
+        "service_z19krz9",    // <-- Service ID aus EmailJS
         "template_aygq118",   // <-- Template ID aus EmailJS
         {
           name: contactForm.name,
@@ -113,10 +113,10 @@ export function ContactSection() {
                   <div>
                     <p className="font-medium text-sm sm:text-base">E-Mail</p>
                     <a 
-                      href="mailto:info@zulassung-muenchen.de" 
+                      href="mailto:info@asm-zulassungsdienst.de" 
                       className="text-primary hover:underline transition-colors text-sm sm:text-base break-all"
                     >
-                      info@ASM-Zulassungsdienst.de
+                      info@asm-zulassungsdienst.de
                     </a>
                   </div>
                 </div>

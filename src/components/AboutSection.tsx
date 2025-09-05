@@ -6,18 +6,18 @@ export function AboutSection() {
   const achievements = [
     {
       icon: Award,
-      title: "15+ Jahre Erfahrung",
-      description: "Langjährige Expertise in der KFZ-Zulassung",
+      title: "Moderner Service",
+      description: "Innovative Lösungen für Ihre KFZ-Zulassung",
     },
     {
       icon: Users,
-      title: "5000+ zufriedene Kunden",
-      description: "Vertrauen durch erstklassigen Service",
+      title: "Engagiertes Team",
+      description: "Persönliche Betreuung und zuverlässige Abwicklung",
     },
     {
       icon: ShieldCheck,
-      title: "Zertifizierte Qualität",
-      description: "Autorisierte Zulassungsstelle mit höchsten Standards",
+      title: "Hohe Standards",
+      description: "Arbeiten nach aktuellen Richtlinien und Qualitätsnormen",
     },
   ];
 
@@ -40,7 +40,7 @@ export function AboutSection() {
               <CardContent className="p-6 sm:p-8">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
-                    Seit über 15 Jahren sind wir Ihr zuverlässiger Partner für alle Angelegenheiten rund um die 
+                    Wir sind Ihr zuverlässiger Partner für alle Angelegenheiten rund um die 
                     <strong className="text-foreground"> KFZ-Zulassung in Köln</strong>. Unser erfahrenes Team sorgt dafür, dass Sie Ihr 
                     <strong className="text-foreground"> Fahrzeug anmelden</strong>, ummelden oder abmelden können – schnell, kompetent und ohne Stress.
                   </p>
