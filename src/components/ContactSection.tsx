@@ -93,7 +93,7 @@ export function ContactSection() {
                   <MapPin className="text-primary text-lg sm:text-xl h-5 w-5 sm:h-6 sm:w-6 mr-3 sm:mr-4 mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-medium text-sm sm:text-base">Adresse</p>
-                    <p className="text-muted-foreground text-sm sm:text-base">Niehlerstraße 123, 50733 Köln</p>
+                    <p className="text-muted-foreground text-sm sm:text-base">Lustheider Str. 31 51103 Köln</p>
                   </div>
                 </div>
                 <div className="flex items-start">
@@ -101,10 +101,10 @@ export function ContactSection() {
                   <div>
                     <p className="font-medium text-sm sm:text-base">Telefon</p>
                     <a 
-                      href="tel:+4989123456789" 
+                      href="tel:+491556306710" 
                       className="text-primary hover:underline transition-colors text-sm sm:text-base"
                     >
-                      089 123 456 789
+                      +49 155 630 6710
                     </a>
                   </div>
                 </div>
@@ -161,7 +161,7 @@ export function ContactSection() {
               {/* Map */}
               <div className="relative">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2370.0282187963044!2d6.9580023321624225!3d50.971656588203274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf258747866a7b%3A0x12929182db8b9b21!2zQsOkY2tlcmVpIEdyw7x0dG5lcg!5e0!3m2!1sde!2sde!4v1756558220304!5m2!1sde!2sde"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.3981097367764!2d7.022522076901607!3d50.934850171688716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf265d03c635f3%3A0xad349dbcc5aeb8f9!2sLustheider%20Str.%2031%2C%2051103%20K%C3%B6ln!5e0!3m2!1sde!2sde!4v1757069074149!5m2!1sde!2sde"
                   width="100%" 
                   height="300" 
                   style={{ border: 0 }}
@@ -171,8 +171,9 @@ export function ContactSection() {
                   title="Standort der ASM-Zulassungsdienst Köln"
                 />
               </div>
+
               
-              {/* Transportation */}
+              {/* Transportation 
               <div className="p-4 bg-section-bg">
                 <div className="flex flex-wrap gap-4 text-sm">
                   <div className="flex items-center text-muted-foreground">
@@ -188,7 +189,7 @@ export function ContactSection() {
                     Bus-Haltestelle: 100m entfernt
                   </div>
                 </div>
-              </div>
+              </div>*/}
             </Card>
           </div>
 

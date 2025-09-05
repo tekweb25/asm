@@ -89,15 +89,15 @@ export function Footer() {
             <div>
               <h4 className="text-base sm:text-lg font-bold mb-4">Kontakt</h4>
               <div className="space-y-2 text-gray-300 text-sm sm:text-base">
-                <p>Musterstraße 123</p>
-                <p>50733</p>
+                <p>Lustheider Str. 31</p>
+                <p>51103</p>
                 <p className="mt-3">
                   <strong>Tel:</strong>{" "}
                   <a
-                    href="tel:+4989123456789"
+                    href="tel:+491556306710"
                     className="hover:text-primary-light transition-colors"
                   >
-                    089 123 456 789
+                    +49 155 630 6710
                   </a>
                 </p>
                 <p>
@@ -154,6 +154,11 @@ export function Footer() {
                   Datenschutz
                 </a>
               </div>
+            </div>
+            <div className="flex top:20px flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0">
+              <p onClick={() => window.location.href = "https://www.teksign.de"} className="text-gray-300 text-sm">
+                Created by TekSign
+              </p>
             </div>
           </div>
         </div>
