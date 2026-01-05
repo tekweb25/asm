@@ -1,6 +1,6 @@
 import { Award, Users, ShieldCheck } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import officeImage from "@/assets/office-interior.jpg";
+import allianz from "@/assets/Allianz.jpeg";
 
 export function AboutSection() {
   const achievements = [
@@ -32,7 +32,7 @@ export function AboutSection() {
             Ihr vertrauensvoller Partner für KFZ-Zulassungen in Köln
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Text Content */}
           <div>
@@ -40,14 +40,14 @@ export function AboutSection() {
               <CardContent className="p-6 sm:p-8">
                 <div className="prose prose-lg max-w-none">
                   <p className="text-muted-foreground mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
-                    Wir sind Ihr zuverlässiger Partner für alle Angelegenheiten rund um die 
-                    <strong className="text-foreground"> KFZ-Zulassung in Köln</strong>. Unser erfahrenes Team sorgt dafür, dass Sie Ihr 
+                    Wir sind Ihr zuverlässiger Partner für alle Angelegenheiten rund um die
+                    <strong className="text-foreground"> KFZ-Zulassung in Köln</strong>. Unser erfahrenes Team sorgt dafür, dass Sie Ihr
                     <strong className="text-foreground"> Fahrzeug anmelden</strong>, ummelden oder abmelden können – schnell, kompetent und ohne Stress.
                   </p>
-                  
+
                   <p className="text-muted-foreground mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
-                    Als autorisierte Zulassungsstelle bieten wir Ihnen den kompletten Service für Ihre 
-                    <strong className="text-foreground"> Auto Anmeldung</strong> und alle weiteren KFZ-Dienstleistungen. Unser Ziel ist es, 
+                    Als autorisierte Zulassungsstelle bieten wir Ihnen den kompletten Service für Ihre
+                    <strong className="text-foreground"> Auto Anmeldung</strong> und alle weiteren KFZ-Dienstleistungen. Unser Ziel ist es,
                     Ihnen den Behördengang so einfach wie möglich zu machen.
                   </p>
 
@@ -57,8 +57,8 @@ export function AboutSection() {
                       Unser Versprechen
                     </h4>
                     <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
-                      Wir behandeln Ihre KFZ-Angelegenheiten mit der gleichen Sorgfalt, 
-                      wie wir es bei unseren eigenen Fahrzeugen tun würden. Transparenz, 
+                      Wir behandeln Ihre KFZ-Angelegenheiten mit der gleichen Sorgfalt,
+                      wie wir es bei unseren eigenen Fahrzeugen tun würden. Transparenz,
                       Kompetenz und Kundenservice stehen bei uns an erster Stelle.
                     </p>
                   </div>
@@ -70,14 +70,11 @@ export function AboutSection() {
           {/* Image and Achievements */}
           <div className="space-y-6 sm:space-y-8">
             {/* Office Image */}
-            <div className="relative">
-              <img
-                src={officeImage}
-                alt="Moderne KFZ Zulassungsstelle München - Professioneller Service"
-                className="w-full h-48 sm:h-64 object-cover rounded-xl card-shadow"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-xl"></div>
-            </div>
+            <img
+              src={allianz}
+              alt="Moderne KFZ Zulassungsstelle München - Professioneller Service"
+              className="w-full h-auto rounded-xl card-shadow"
+            />
 
             {/* Achievements Grid */}
             <div className="grid gap-3 sm:gap-4">
@@ -99,7 +96,7 @@ export function AboutSection() {
             </div>
           </div>
         </div>
-        
+
         {/* SEO Content */}
         <div className="mt-16">
           <Card className="card-shadow border-border/50">
@@ -107,32 +104,32 @@ export function AboutSection() {
               <h3 className="text-2xl font-bold mb-6 text-center text-foreground">
                 Warum ASM-Zulassungsdienst wählen?
               </h3>
-              
+
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
                   <h4 className="font-bold text-lg mb-3 text-foreground">Kompetente Beratung</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    Unsere Experten beraten Sie umfassend zu allen Aspekten der Fahrzeugzulassung. 
+                    Unsere Experten beraten Sie umfassend zu allen Aspekten der Fahrzeugzulassung.
                     Von der ersten Anmeldung bis zur finalen Abmeldung stehen wir Ihnen mit Rat und Tat zur Seite.
                   </p>
-                  
+
                   <h4 className="font-bold text-lg mb-3 text-foreground">Zeitersparnis garantiert</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Vermeiden Sie lange Wartezeiten bei Behörden. Wir erledigen Ihre KFZ-Angelegenheiten 
+                    Vermeiden Sie lange Wartezeiten bei Behörden. Wir erledigen Ihre KFZ-Angelegenheiten
                     schnell und effizient, damit Sie sich auf wichtigere Dinge konzentrieren können.
                   </p>
                 </div>
-                
+
                 <div>
                   <h4 className="font-bold text-lg mb-3 text-foreground">Alle Services unter einem Dach</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    Ob Neuzulassung, Ummeldung, Abmeldung oder Kennzeichen-Service – 
+                    Ob Neuzulassung, Ummeldung, Abmeldung oder Kennzeichen-Service –
                     wir bieten alle Dienstleistungen rund um die Fahrzeugzulassung in München.
                   </p>
-                  
+
                   <h4 className="font-bold text-lg mb-3 text-foreground">Transparente Preise</h4>
                   <p className="text-muted-foreground text-sm leading-relaxed">
-                    Keine versteckten Kosten, keine Überraschungen. Wir informieren Sie vorab 
+                    Keine versteckten Kosten, keine Überraschungen. Wir informieren Sie vorab
                     über alle anfallenden Gebühren und Kosten für Ihre KFZ-Zulassung.
                   </p>
                 </div>
